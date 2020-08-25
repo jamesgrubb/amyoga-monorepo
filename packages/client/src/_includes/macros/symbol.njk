@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Amy Roberts">
+    <meta name="generator" content="@11ty/Eleventy">
+    <title>{% block pageTitle %} Yoga with Amy {% endblock %} | {% block currentPage %} {% endblock%} </title>
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/"> -->
+    <!-- Bootstrap core CSS -->
+    <link href="/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+    {% include 'header.njk' %}
+
+    <main role="main" class="page-wrapper">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% include 'footer.njk' %}
+
+</html>

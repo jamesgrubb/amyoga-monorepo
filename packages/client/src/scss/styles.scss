@@ -1,0 +1,44 @@
+@import 'colors';
+@import 'fonts';
+@import 'root';
+@import 'header';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: inherit;
+
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    font-kerning: auto;
+    background-color: $color-gray-light;
+    font-family: $poppins;
+    font-size: var(--text-base-size);
+}
+
+.page-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    & > * {
+        margin: 0 auto;
+    }
+}
+
+.page{
+    flex: 0 90%;
+    flex: 0 #{'min(64em, 90%)'};
+    
+}
