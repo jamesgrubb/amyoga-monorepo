@@ -8,6 +8,16 @@ button {
     -webkit-appearance: button; /* Safari otherwise prevents some styles */
     bottom: 0;
     background-color: $color-green-dark;
+    border: none;
+    padding: var(--size-sm) var(--size-md);
+  
+    &:active{
+      transform: scale(0.9)
+    }
+    &:focus{
+      outline: none;
+      box-shadow: 0 0 0 3px $color-green
+    }
   }
   
   button::-moz-focus-inner {
@@ -17,4 +27,15 @@ button {
   
   button:-moz-focusring {
     outline: 1px dotted ButtonText;
+  }
+
+  @media (hover: hover){
+    button:hover{        
+            color: $color-green-light;    
+            background-color:transparent;
+        }
+    }
+  a:focus{
+    outline: none;
+    // box-shadow: 0 0 0 3px $color-green
   }

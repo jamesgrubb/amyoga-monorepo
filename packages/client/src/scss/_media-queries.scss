@@ -1,0 +1,17 @@
+@mixin respond($breakpoint){
+
+    @if $breakpoint == tablet {
+
+        @media (min-width: 40em){
+            @content;
+        }
+
+    }
+
+    @if $breakpoint  ==  mobile {
+        @media (min-width: 20em){
+            @content
+        }
+    }
+    
+}

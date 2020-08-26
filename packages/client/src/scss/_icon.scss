@@ -1,12 +1,28 @@
 .icon{
     width: 1em;
-    height: 1em;
     background-color: transparent;
     color: $color-green-dark;
-    &:hover,&:active{
-        color: $color-green-bright;    
+    padding: 2px;
+    border-radius: 4px;        
+    &:active{
+        color: $color-green-bright;
+        background-color:transparent;
+        transform: scale(0.99);
+        box-shadow: transparent;
     }
-    &.toggle-nav{
+    &:focus{
+        outline: none;
+        box-shadow: 0 0 0 2px $color-green
+    }        
+}
+
+    .toggle-nav{
         font-size: var(--text-xxl);
     }
-}
+
+@media (hover: hover){
+    .icon:hover{        
+            color: $color-green-light;    
+            background-color:transparent;
+        }
+    }

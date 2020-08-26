@@ -1,18 +1,18 @@
 <div class="wrapper">
-    <nav class="nav-bar">
+    <nav arial-labelledby="nav-heading" class="nav-bar" x-data="{ isOpen: false}" :aria-expanded="isOpen">
         <a class="masthead" href="{{page.url}}">
             <figure>
                 {% include './symbols/yoga.njk' %}
                 {% include './symbols/with-amy.njk' %}
             </figure>
         </a>
-        <ul class="nav-primary__navitems">
-            {%- for link in collections.paginated %}
+        <ul x-cloak  :hidden="!isOpen" id="nav-bar" class="nav-bar__nav-items">
+            {%- for link in collections.paginated -%}
     
-            <li {% if link == page.url %} aria-current="page" {% endif %} class="nav-primary__navitem"><a
+            <li {% if link == page.url %} aria-current="page" {% endif %} class="nav-bar__nav-item"><a class="link"
                     href="{{ page.url }}">{{ link.data.title }}</a></li>
             {%- endfor %}
         </ul>
-        <button style="color: red" class="icon toggle-nav"><span class="sr-only">menu</span>{% include './symbols/nav-toggle.njk' %}</button>
+        <button :aria-expanded="isOpen" aria-controls="nav-bar" @click="isOpen = !isOpen" class="icon toggle-nav"><span class="sr-only">toggle menu</span>{% include './symbols/nav-toggle.njk' %}</button>
     </nav>
 </div>
