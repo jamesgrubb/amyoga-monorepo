@@ -1,8 +1,8 @@
 [build]
+    base= "./packages/client"
     command= "eleventy"
     functions= "./functions/"
-    public= "public"
-    base= "./packages/client"
+    publish= "/public"
 
 [dev]
     command= "yarn start"

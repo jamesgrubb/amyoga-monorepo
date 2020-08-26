@@ -26,6 +26,9 @@
     justify-content: center;
     display: grid;
     place-items: center;
+    &[x-cloak="mobile"]{
+        display: block;
+    }
     &[hidden="hidden"]{
         display: none;
     }    
