@@ -1,3 +1,6 @@
+@mixin border($color){
+    border: 2px solid $color;
+}
 .sr-only{
     clip-path: rect(1px, 1px, 1px, 1px,) ;
     clip-path: rect(1px 1px 1px 1px);

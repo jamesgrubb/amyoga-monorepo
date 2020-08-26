@@ -47,6 +47,13 @@ export default {
                     }
                 }
             ]
+        },
+        {
+            name: "social",
+            title: "Social Links",
+            type: "url",
+            description: "Please fill in your social links",
+            validation: Rule => Rule.required()
         }
     ]
 }

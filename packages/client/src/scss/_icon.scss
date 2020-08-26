@@ -1,0 +1,12 @@
+.icon{
+    width: 1em;
+    height: 1em;
+    background-color: transparent;
+    color: $color-green-dark;
+    &:hover,&:active{
+        color: $color-green-bright;    
+    }
+    &.toggle-nav{
+        font-size: var(--text-xxl);
+    }
+}

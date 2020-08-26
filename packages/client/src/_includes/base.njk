@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ global.name }} | {{ title }}</title>
+    <script src="/js/alpine.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+{% include 'vectors.svg' %}
+{% include 'nav-bar.njk' %}
+<div class="wrapper">
+<main class="main">
+{% block content %}
+
+
+{% endblock %}
+</main>
+</div>
+<div class="wrapper">
+{% include 'footer.njk' %}
+</div>    
+</body>
+</html>

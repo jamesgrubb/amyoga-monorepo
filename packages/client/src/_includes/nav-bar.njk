@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <nav class="nav-bar">
+        <a class="masthead" href="{{page.url}}">
+            <figure>
+                {% include './symbols/yoga.njk' %}
+                {% include './symbols/with-amy.njk' %}
+            </figure>
+        </a>
+        <ul class="nav-primary__navitems">
+            {%- for link in collections.paginated %}
+    
+            <li {% if link == page.url %} aria-current="page" {% endif %} class="nav-primary__navitem"><a
+                    href="{{ page.url }}">{{ link.data.title }}</a></li>
+            {%- endfor %}
+        </ul>
+        <button style="color: red" class="icon toggle-nav"><span class="sr-only">menu</span>{% include './symbols/nav-toggle.njk' %}</button>
+    </nav>
+</div>

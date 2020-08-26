@@ -1,0 +1,20 @@
+button {
+    font-family: inherit; /* For all browsers */
+    font-size: 100%; /* For all browsers */
+    line-height: 1.15; /* For all browsers */
+    margin: 0; /* Firefox and Safari have margin */
+    overflow: visible; /* Edge hides overflow */
+    text-transform: none; /* Firefox inherits text-transform */
+    -webkit-appearance: button; /* Safari otherwise prevents some styles */
+    bottom: 0;
+    background-color: $color-green-dark;
+  }
+  
+  button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }

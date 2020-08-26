@@ -1,0 +1,12 @@
+:root{
+    --text-scale: 1.2;
+    --text-base-size: 1rem;
+    --text-xs: calc(var(--text-base-size) / var(--text-scale) / var(--text-scale));
+    --text-sm: calc(var(--text-scale) * var(--text-xs));
+    --text-md: calc(var(--text-sm) * var(--text-scale) * var(--text-scale));
+    --text-lg: calc(var(--text-scale) * var(--text-md));
+    --text-xl: calc(var(--text-scale) * var(--text-lg));
+    --text-xxl: calc(var(--text-scale) * var(--text-xl));
+    --text-xxxl: calc(var(--text-scale) * var(--text-xxl));
+    --text-xxxxl: calc(var(--text-scale) * var(--text-xxxl));
+  }

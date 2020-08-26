@@ -1,15 +1,12 @@
 ---
-title: Yoga with Amy
-tags: pagination
+title: Home
+tags: paginated
 ---
-{% extends './_layouts/templates/base.njk' %}
 
-{% block pageTitle %}{{title}}{% endblock %}
+{% extends "base.njk" %}
+<main class="intro">
 
+</main>
 {% block content %}
-    {%- for lesson in class %}
-        <p>{{ lesson.description }}</p>
-        <p>{{ lesson.name }}</p>
 
-    {% endfor %}
 {% endblock %}

@@ -1,0 +1,31 @@
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: start;
+    padding: var(--space-md);
+
+}
+
+.masthead{
+    flex: 0 50vw;
+    & figure svg{
+        color: $color-green;
+    }
+    & figure svg:last-child{
+        width: 50%;
+        margin: -10% auto;
+        color: $color-gray-dark;
+
+    }
+}
+
+.toggle-nav{
+    margin-left: auto;
+}
+
+

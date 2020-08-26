@@ -1,7 +1,16 @@
 @import 'colors';
-@import 'fonts';
-@import 'root';
+@import 'grid';
+@import 'footer';
+@import 'text-scale';
+@import 'space';
 @import 'header';
+@import 'space';
+@import 'fonts';
+@import 'nav-bar';
+@import 'utilities';
+@import 'icon';
+@import 'button';
+
 
 *{
     margin: 0;
@@ -29,16 +38,25 @@ body{
     font-size: var(--text-base-size);
 }
 
-.page-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    & > * {
-        margin: 0 auto;
-    }
+svg{
+    display: block;
+    width: 100%;
 }
 
-.page{
-    flex: 0 90%;
-    flex: 0 #{'min(64em, 90%)'};
-    
+.wrapper{
+    background-color:teal;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+.main{
+    flex: 0 var(--grid-gutter);
+    height: 50%;
+    @include border(pink);   
+}
+
+footer{
+    grid-row: 2 / 3
+    border
 }
