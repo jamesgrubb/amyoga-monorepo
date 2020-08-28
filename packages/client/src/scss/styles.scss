@@ -33,7 +33,7 @@ html{
 }
 
 html,body{
-    height: 100%;
+    height: 200%;
 }
 
 body{
@@ -49,7 +49,6 @@ svg{
 }
 
 .wrapper{
-    background-color:teal;
     display: flex;    
     flex-wrap: wrap;
     justify-content: center;    

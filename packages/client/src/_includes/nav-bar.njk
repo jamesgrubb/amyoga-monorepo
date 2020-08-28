@@ -1,4 +1,8 @@
-<div class="wrapper">
+<div class="wrapper fixed"
+x-data="{ scrollAtTop: true}"
+:class="{'visible' : !scrollAtTop}"
+@scroll.window="scrollAtTop = (window.pageYOffset > 50 ? false : true)"
+>
     <nav arial-labelledby="nav-heading" class="nav-bar" x-data="{ isOpen: false}" :aria-expanded="isOpen">
         <a class="masthead" href="{{page.url}}">
             <figure>
@@ -6,7 +10,7 @@
                 {% include './symbols/with-amy.njk' %}
             </figure>
         </a>
-        <ul x-cloak  :hidden="!isOpen" id="nav-bar" class="nav-bar__nav-items">
+        <ul  :hidden="!isOpen" id="nav-bar" class="nav-bar__nav-items">
             {%- for link in collections.paginated -%}
     
             <li {% if link == page.url %} aria-current="page" {% endif %} class="nav-bar__nav-item"><a class="link"

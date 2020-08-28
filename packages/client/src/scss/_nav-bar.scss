@@ -1,14 +1,16 @@
 .nav-bar{
+
     align-items: center;
     align-self: start;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     left: 0;
-    position: fixed;
+    // position: fixed;
     padding: var(--space-md);
     top: 0;
-    width: 100%;    
+    flex: 0 80%;
+    max-width: 64em;
     &__nav-items{
     background-color: $color-green-bright;
     background-image: url('https://res.cloudinary.com/makingthings/image/upload/v1597253093/yoga/vector.png');
@@ -20,18 +22,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     display: grid;
     place-items: center;
-    &[x-cloak="mobile"]{
-        display: block;
-    }
+
     &[hidden="hidden"]{
         display: none;
     }    
+
 }
 &__nav-item{
     font-size: var(--text-lg);
@@ -43,6 +44,10 @@
 
 .masthead{
     flex: 0 50vw;
+    @include respond(tablet){
+        flex: 0 200px;
+        flex: 0 #{'min(200px, 20vw)'}
+    }
     & figure svg{
         color: $color-green;
     }
@@ -52,6 +57,7 @@
         color: $color-gray-dark;
 
     }
+
 }
 
 .toggle-nav{
