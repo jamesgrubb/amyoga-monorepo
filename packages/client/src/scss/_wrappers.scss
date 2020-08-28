@@ -1,0 +1,25 @@
+:root{
+    --gutter: 80%;
+}
+
+.page-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    & > * {
+        margin: 0 auto;
+    }
+    & > * + * {
+        margin-top: var(--space-lg);
+    }
+}
+
+.page{
+    width: 100%;
+    display: flex;
+    flex: 0 var(--gutter);
+    max-width: 90ch;
+    height: 100%;
+    margin: 0 auto;
+
+}

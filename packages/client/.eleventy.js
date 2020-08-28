@@ -18,8 +18,12 @@ module.exports = (eleventyConfig) => {
 
     eleventyConfig.addPassthroughCopy('src/css')
     eleventyConfig.addPassthroughCopy('src/images')
+    eleventyConfig.addPassthroughCopy('src/js')
     eleventyConfig.addPassthroughCopy({
         "../../node_modules/alpinejs/dist/alpine.js": "js/alpine.js",
+    });
+    eleventyConfig.addPassthroughCopy({
+        "../../node_modules/gsap/dist/gsap.min.js": "js/gsap.js",
     });
 
     return {

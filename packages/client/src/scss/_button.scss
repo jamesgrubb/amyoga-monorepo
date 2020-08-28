@@ -1,4 +1,4 @@
-button {
+button, .button {
     font-family: inherit; /* For all browsers */
     font-size: 100%; /* For all browsers */
     line-height: 1.15; /* For all browsers */
@@ -10,9 +10,11 @@ button {
     background-color: $color-green-dark;
     border: none;
     padding: var(--size-sm) var(--size-md);
-  
+    color: $color-green-light;
+    padding: var(--space-md) var(--space-lg);
+    text-transform: uppercase;
     &:active{
-      transform: scale(0.9)
+      transform: scale(0.98)
     }
     &:focus{
       outline: none;
@@ -32,7 +34,7 @@ button {
   @media (hover: hover){
     button:hover{        
             color: $color-green-light;    
-            background-color:transparent;
+            background-color: color-green-bright;
         }
     }
   a:focus{

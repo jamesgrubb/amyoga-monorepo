@@ -1,0 +1,89 @@
+.header{
+    --margin-top: calc(10vh + var(--space-lg)) ;
+    margin-top: var(--margin-top);
+    display: flex;
+    overflow-x: visible;
+    height: 100vh;        
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    &:after{
+        content: "";
+        display: block;
+        width: 200%;
+        height: 100%;
+        overflow-x: visible;
+        position: fixed;
+        left: -20vw;
+        opacity: 0.4;
+        top: 0;
+        // bottom: -20vh;
+        background-repeat: no-repeat;
+        background-image: url("/images/shadow-2.png");
+        background-size: cover;
+
+        @include break(tablet){
+            left: -20vw;
+            width: 160%
+        }
+        @include break(desktop){
+            left: 0vw;
+            width: 120%
+        }
+    }
+    // height: 100%;
+    &__image{
+        // flex: 0 50%;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transform: transitionX(0%);
+        z-index: 0;
+        &:before{ 
+            transform: rotate(70deg);
+             
+            z-index: 0;      
+            position: absolute;
+            display: block;
+            content: "";
+            width: 40vmin;
+            height: 40vmin;
+            background-image: url("/images/leaf-2.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        & img{
+            max-width: 100%;
+            position: relative;
+            width: #{'min(90px, 80vw)'};            
+        }
+    }
+    &__intro{
+        font-size: var(--text-xxl);
+        font-weight: 300;
+        color: $color-gray;
+        margin-top: var(--space-lg);
+        width: 80%;
+        text-align: center;
+        line-height: 1;
+        z-index: 0;
+        & em{
+            font-size: 200%;
+            font-family: $modish;
+            color: $color-gold
+        }
+    }
+    &__cta{
+        display: flex;
+        flex: 0 25%;
+        align-items: center;
+        & a{
+
+        }
+
+    }
+}
+
+

@@ -1,0 +1,15 @@
+<header class="header">
+    <div class="page column">
+        <figure class="header__image">
+            {%- for item in settings %}
+            <img src="{{ item.portrait.asset.url }}" alt="{{ item.portrait.caption }}">
+            {%- endfor %}
+        </figure>
+        <p class="header__intro">
+        Take some time to focus on your <em>health</em>, <em>wellbeing</em> and <em>fitness</em>
+        </p>
+        <div class="header__cta">
+        <a class="button" href="#pormo">get started</a>
+        </div>
+    </div>
+</header>

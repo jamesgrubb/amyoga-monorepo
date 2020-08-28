@@ -17,13 +17,15 @@
     "autoprefixer": "^9.8.6",
     "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
+    "gsap": "^3.5.1",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "html-minifier": "^4.0.0",
     "image-downloader": "^4.0.1",
-    "postcss-clean": "^1.1.0"
+    "postcss-clean": "^1.1.0",
+    "tailwind": "^4.0.0"
   },
   "devDependencies": {
     "alpinejs": "^2.6.0",

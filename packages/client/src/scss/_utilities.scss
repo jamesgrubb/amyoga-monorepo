@@ -14,13 +14,23 @@
     display: none;
 }
 
+.fixed-top{    
+    min-height: 10vh;
+    padding: var(--space-lg) 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+}
+
 .fixed{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #fff;
-    @include respond(tablet){
+    @include break(tablet){
         transform: translateY(-100%);
         transition: all 0.4s ease;
         &.visible{
@@ -31,6 +41,17 @@
     
 }
 
+.column{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 @media screen and (max-width: 768px) {
     [x-cloak="mobile"] { display: block; }
+}
+
+.hidden{
+    display: none;
 }

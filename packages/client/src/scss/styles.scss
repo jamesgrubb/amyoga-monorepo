@@ -2,18 +2,20 @@ $letter-spacing: 0.2em;
 
 
 @import 'media-queries';
+@import 'fonts';
 @import 'colors';
 @import 'grid';
 @import 'footer';
 @import 'text-scale';
 @import 'space';
 @import 'header';
+@import 'wrappers';
 @import 'space';
-@import 'fonts';
 @import 'nav-bar';
 @import 'utilities';
 @import 'icon';
 @import 'button';
+
 
 
 
@@ -34,6 +36,9 @@ html{
 
 html,body{
     height: 200%;
+    background-image: url('/images/leaf-pattern.png');
+    background-size: 250px 250px;
+    background-attachment: fixed;        
 }
 
 body{
